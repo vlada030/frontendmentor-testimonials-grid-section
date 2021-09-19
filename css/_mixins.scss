@@ -1,0 +1,53 @@
+@mixin article($background) {
+    width: 327px;
+    padding: 26px 32px 32px 32px;
+    //background: linear-gradient($startColor, $endColor);
+    background: $background;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }    
+}
+
+@mixin profile($ImagePersonName, $ImagePersonTitle, $imageBorder: none) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 18px;
+
+    img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: $imageBorder;
+        box-sizing: content-box;
+        margin-right: 15px;
+    }
+
+    h5 {
+        font-size: $fontSizeDefault;
+        color: $ImagePersonName;
+        line-height: 13px;
+    }
+
+    p { 
+        font-size: 11px;
+        color: $ImagePersonTitle;
+    }
+}
+
+@mixin heading($fontColor, $marginBottom) {
+    color: $fontColor;
+    font-weight: $fontWeightBold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: $marginBottom;
+}
+
+@mixin text($textColor) {
+    color: $textColor;
+    line-height: 18px;
+}

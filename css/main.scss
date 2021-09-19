@@ -1,1 +1,98 @@
-@import 'globals'
+@import 'globals';
+@import 'defaults';
+@import 'mixins';
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 71px 24px;
+}
+
+.article-one {
+    @include article(none);
+    background-image: url(../images/bg-pattern-quotation.svg), linear-gradient($startColor, $endColor);
+    background-repeat: no-repeat;
+    background-position:top right 24px, center;
+    background-size: 104px 104px, auto;
+    .person {
+        
+        @include profile($fontColorHeadings, $fontColorSubHeading-1, 2px solid $endColor);
+    }
+
+    .heading {
+        @include heading($fontColorHeadings, 40px);
+    }
+
+    .text {
+        @include text($fontColorText-1);
+    }
+    
+}
+
+.article-two {
+    @include article($fontColorHeadingsDark);
+
+    .person {
+        @include profile($fontColorHeadings, $fontColorSubHeading-1);
+    }
+
+    .heading {
+        @include heading($fontColorHeadings, 16px);
+    }
+
+    .text {
+        @include text($fontColorText-2);
+    }
+    
+}
+
+.article-three {
+    @include article($fontColorHeadings);
+
+    .person {
+        @include profile($fontColorHeadingsDark, $fontColorSubHeading-2);
+    }
+
+    .heading {
+        @include heading($fontColorHeadingsDark, 16px);
+    }
+
+    .text {
+        @include text($fontColorText-3);
+    }
+    
+}
+
+.article-four {
+    @include article(#19202D);
+
+    .person {
+        @include profile($fontColorHeadingsDark,$fontColorSubHeading-1, 2px solid $startColor);
+    }
+
+    .heading {
+        @include heading($fontColorHeadings, 16px);
+    }
+
+    .text {
+        @include text($fontColorText-2);
+    }
+    
+}
+
+.article-five {
+    @include article($fontColorHeadings);
+
+    .person {
+        @include profile($fontColorHeadingsDark, $fontColorSubHeading-2);
+    }
+
+    .heading {
+        @include heading($fontColorHeadingsDark, 16px);
+    }
+
+    .text {
+        @include text($fontColorText-3);
+    }
+    
+}

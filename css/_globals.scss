@@ -1,2 +1,20 @@
-$fontSize: 13px;
+$fontSizeDefault: 13px;
 $fontFamilly: 'Barlow Semi Condensed', sans-serif;
+$fontWeightDefault: 500;
+$fontWeightBold: 600;
+
+$fontColorHeadings: rgb(255, 255, 255);
+$fontColorHeadingsDark: rgb(72, 85, 106);
+
+$fontColorSubHeading-1: rgba(255, 255, 255, 0.5);
+$fontColorSubHeading-2: rgba(72, 85, 106, 0.5);
+
+$fontColorText-1: rgba(207, 207, 207, 0.7);
+$fontColorText-2: rgba(255, 255, 255, 0.7);
+$fontColorText-3: rgba(72, 85, 106, 0.7);
+
+$backgroundColor: rgb(236, 242, 248);
+
+// first article
+$startColor: #733FC8;
+$endColor: #A775F1;
