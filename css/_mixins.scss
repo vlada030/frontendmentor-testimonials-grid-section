@@ -1,5 +1,4 @@
 @mixin article($background) {
-    width: 327px;
     padding: 26px 32px 32px 32px;
     //background: linear-gradient($startColor, $endColor);
     background: $background;
@@ -12,11 +11,11 @@
     }    
 }
 
-@mixin profile($ImagePersonName, $ImagePersonTitle, $imageBorder: none) {
+@mixin profile($ImagePersonName, $ImagePersonTitle, $ImageMarginBottom, $imageBorder: none) {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: $ImageMarginBottom;
 
     img {
         width: 28px;
