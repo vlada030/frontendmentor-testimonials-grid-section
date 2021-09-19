@@ -41,16 +41,15 @@ body {
 
 .article-one {
   padding: 26px 32px 32px 32px;
-  background: none;
+  background: #733FC8;
   -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
           box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
   border-radius: 8px;
   margin-bottom: 24px;
-  background-image: url(../images/bg-pattern-quotation.svg), -webkit-gradient(linear, left top, left bottom, from(#733FC8), to(#A775F1));
-  background-image: url(../images/bg-pattern-quotation.svg), linear-gradient(#733FC8, #A775F1);
+  background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top right 24px, center;
-  background-size: 104px 102px, auto;
+  background-position: top right 24px;
+  background-size: 104px 102px;
   padding-top: 24px;
 }
 
@@ -116,9 +115,7 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    background-image: url(../images/bg-pattern-quotation.svg), -webkit-gradient(linear, left top, left bottom, from(#733FC8), to(#733FC8));
-    background-image: url(../images/bg-pattern-quotation.svg), linear-gradient(#733FC8, #733FC8);
-    background-position: top right 80px, center;
+    background-position: top right 80px;
   }
   .article-one .heading {
     margin-bottom: 16px;

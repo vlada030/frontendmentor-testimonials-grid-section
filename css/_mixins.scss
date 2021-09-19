@@ -1,6 +1,5 @@
 @mixin article($background) {
     padding: 26px 32px 32px 32px;
-    //background: linear-gradient($startColor, $endColor);
     background: $background;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
     border-radius: 8px;
